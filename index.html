@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business Development Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .chatbot-container {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the AI Business Development Club</h1>
+    </header>
+    <main>
+        <p>Explore the world of AI with our integrated chatbot. Ask anything!</p>
+        <div class="chatbot-container">
+            <!-- Voiceflow bot widget -->
+            <script type="text/javascript">
+              (function(d, t) {
+                  var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                  v.onload = function() {
+                    window.voiceflow.chat.load({
+                      verify: { projectID: '66e3385708a05874bb3adced' },
+                      url: 'https://general-runtime.voiceflow.com',
+                      versionID: 'production'
+                    });
+                  }
+                  v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+              })(document, 'script');
+            </script>
+        </div>
+    </main>
+</body>
+</html>
