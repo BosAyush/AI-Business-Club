@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business Development Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .chatbot-container {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the AI Business Development Club</h1>
+    </header>
+    <main>
+        <p>Explore the world of AI with our integrated chatbot. Ask anything!</p>
+        <div class="chatbot-container">
+            <!-- TIXAE Agents (Voiceglow) Chatbot Widget -->
+            <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+                <!-- Here is where TIXAE Agents renders the widget. -->
+            </div>
+
+            <script defer>
+                (function() {
+                    window.VG_CONFIG = {
+                        ID: "9s2n93utjdj5udvc", // YOUR AGENT ID
+                        region: 'eu', // YOUR ACCOUNT REGION
+                        render: 'bottom-right', // Render position: 'full-width', 'bottom-left', or 'bottom-right'
+                        stylesheets: [
+                            "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css", // Base TIXAE Agents CSS
+                        ],
+                        // Optional user data can be added below:
+                        // user: {
+                        //     name: 'John Doe',
+                        //     email: 'johndoe@gmail.com',
+                        //     phone: '+1234567890',
+                        // }
+                        // Optional settings
+                        // userID: 'USER_ID', // Custom user ID
+                        // autostart: true, // Auto-start chatbot with a proactive message
+                    };
+                    var VG_SCRIPT = document.createElement("script");
+                    VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+                    VG_SCRIPT.defer = true; // Remove 'defer' to load widget faster (might affect website loading speed)
+                    document.body.appendChild(VG_SCRIPT);
+                })()
+            </script>
+        </div>
+    </main>
+</body>
+</html>
